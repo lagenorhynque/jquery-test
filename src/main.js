@@ -1,3 +1,5 @@
-window.onload = function () {
-  document.querySelector('#msg').textContent = 'これは、jQueryなしの表示です。';
-};
+var $ = require('jquery');
+
+$(function () {
+  $('#msg').text('これは、jQueryで表示したテキストです。');
+});
