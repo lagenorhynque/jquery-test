@@ -8,7 +8,7 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loader: 'strict-loader'
+        loader: 'strict'
       }
     ]
   }
