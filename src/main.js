@@ -1,5 +1,5 @@
 var $ = require('jquery');
 
 $(function () {
-  $('#msg').text('これは、jQueryで表示したテキストです。');
+  $('#msg').html('これは、<a href="http://google.com">リンク</a>のサンプルです。');
 });
