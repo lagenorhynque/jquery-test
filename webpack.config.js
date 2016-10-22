@@ -3,5 +3,13 @@ module.exports = {
   output: {
     path: './public/js',
     filename: 'bundle.js'
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        loader: 'strict-loader'
+      }
+    ]
   }
 };
