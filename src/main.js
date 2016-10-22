@@ -2,7 +2,10 @@ var $ = require('jquery');
 
 $(function () {
   $('#btn1').click(function () {
-    var val = $('input[name=radio1]:checked').val();
-    $('#msg').text('Checked: ' + val);
+    var msg = 'Selected: ';
+    $('#sel1 option:selected').each(function () {
+      msg += $(this).val() + ' ';
+    });
+    $('#msg').text(msg);
   });
 });
